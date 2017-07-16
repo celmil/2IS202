@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- DOCtype används för att berätta för webbläsaren vilken HTMLversion den ska läsa sidan som.
+<!DOCTYPE html> betyder att webbläsaren ska läsa hemsidan som HTML5, om man inte skriver med DOCTYPE
+så kan man riskera att webbläsaren läser koden som en annan HTML version, vilken skulle ge en konstig sida, 
+eller kanske inte fungera. Eftersom webbläsaren inte behöver "gissa" om man har med DOCTYPE så kan det också
+göra att sidan laddas snabbare.-->
+<html lang="sv">
+<head>
+        <title>
+      Djupviks Hamn
+        </title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="./styles/style.css">
+</head>
+<body>
+     <header>
+		<img id="TheHeader" src="./images/header.png" width="1900" 
+		alt="Headerbild, bred vy av havet vid solnedgång"/>
+        <nav class="nav">
+            <ul>
+				<li><a href="./index.html" class"active">Start</a></li>
+				<li><a href="./html/info.html">Information</a></li>
+				<li><a href="./html/guest.html">Gästplatser</a></li>
+				<li><a href="./html/history.html">Historia</a></li>
+				<li><a href="./html/contact.html">Kontakt</a></li>
+				<li><a href="./html/members.html">Medlemsinfo</a></li>
+				<li><a href="./html/english.html">In English</a></li>
+            </ul>
+		</nav>
+    </header>
+<!--span för att kunna ha en vit ruta kring rubriken, trodde jag skulle behöva section id här men än sålänge ser det 
+inte ut så, låter den ligga kvar om det behövs-->
+<section>
+    <h1><span>Djupvik</span></h1>
+</section>
+<section class="ColumnStyling">
+    <section class="content">
+    <h2> Information:</h2>
+        Djupviks hamn ligger på Gotlands västkust nästan rakt öster om Lilla Karlsö. Hamnen är otroligt
+        vackert belägen i anslutning till ett gammalt Gotländskt fiskeläge. I hamnen finns under
+        sommarsäsongen en kiosk med lite av varje. Ett par hundra meter ovanför hamnen ligger Djupviks
+        Hotell, ett hotell med restaurang och bra standard.
+    <!--senaste händelserna, "vanlig" styling, la in varje händelse i en egen article-->
+    <h2> Senaste nytt:</h2>
+    <article>
+        <h3>Succé för hamnens dag!</h3>
+        16-07-18<br />
+        <p>
+        Lördagen den 16 juli arrangerade föreningen Djupviks hamn i Eksta ”Hamnens dag” i Djupvik. Vårt
+        arbete har med åren alltmer också inriktats på att alla besökare, även de som kommer landvägen
+        skall trivas i det vackra hamnområdet. Nu bjöds det in till ”Hamnens dag”. På plats fanns
+        sjöfartsverkets SAR-helikopter, Sjöräddningens båt Hwitstjärna, släckningsbil från
+        räddningstjänsten i Klintehamn, russ från Gannarve och ett antal loppisförsäljare. Aktiviteten
+        lockade ett stort antal besökare.</p>
+        <p>
+        Uppskattningsvis 1000 besökare sökte sig under dagen till Djupvik. Intresset var stort för de
+        besökande organisationerna som informerade och alla fick möjlighet att titta och ställa frågor.
+        Barnen fick rida, de bjöds på bulle och dricka och många prövade lyckan i fiskdammen. Det fanns
+        möjlighet att handla kaffe, korv, dricka och glass. Många dröjde sig kvar i hamnområdet och trivdes
+        i det inledningsvis lite blåsiga men vackra vädret.
+        </p>
+    </article>
+        <article>
+        <h3>Hamnjobb</h3>
+        16-05-07<br />
+        <!--La in bilden i en figure för att enklare applicera class indexnewsimages-->
+        <figure class="IndexNewsImages">
+        <img src="./images/boats_in_dock.jpg" width="251" height="137"
+			alt="Bild på hamn"/> <br />
+        </figure>
+        <p>
+        Lördagen den 7 maj samlades ett 15-tal medlemmar för arbete i hamnen. Kiosken, kajerna och
+        stranden städades. Kajer lagades och gräs brändes. Diverse fix på många håll. Vädret var bra och
+        korven god. Det som återstår inför säsongen är att ta bort släke från stranden, att sätta upp ramp
+        vid kiosken och att fylla kiosken med varor.
+        </p>
+    </article>
+    </section>
+
+    <!--Dessa bilder kommer läggas i en kolumn åt höger med stilmall, la in dem med samma bredd sålänge, stylas
+    enligt class imageecolumn-->
+    <figure class="ImageColumn">
+        <img src="./images/hamn-eva.jpg" alt="Båt i hamn med sjöstuga i förgrunden" width="290" height="173"/>
+        <img src="./images/kiosk.jpg" alt="Gul kiosk på gräsmatta" width="290" height="215"/>
+        <img src="./images/solnedgang.jpg" alt="Segelbåt i hamn framför solnedgång" width="290" height="187"/>
+        <figcaption>
+        En bild säger mer än tusen ord, vi skulle dock behövt många fler 
+        bilder för att ge dig en komplett bild utav Djupvik.
+        </figcaption>
+    </figure>
+    </section>
+
+    <footer>
+            <p> Är du medlem men saknar tillgång till medlemssidan? Kontakta oss i Kontaktformuläret så löser vi det! </p>
+    </footer>
+
+</body>
+</html>
+
