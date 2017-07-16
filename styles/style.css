@@ -1,0 +1,137 @@
+/*de inledande raderna är för att inte webbläsaren ska sätta egna värden, vi använder * för att allt ska 
+vara utan padding, marginaler och kanter*/
+*{
+        margin: 0, 0, 0, 0;
+        padding: 0, 0, 0, 0;
+        border: 0;
+        font-size: 16px;
+}
+
+
+/*bakgrundbild, grå*/
+body {
+        background-image: url(../images/layout/body-pattern.jpeg);
+}
+
+/*rubriker i teckensnitt Fjalla ONe, och som back-up plan ett teckensnitt utan serifer, bold*/
+h1, h2, h3, h4, h5, h6 {
+        font-family: 'Fjalla One', sans-serif;
+        color: #1f1f1f;  /*färg tagen från färgschemat*/
+        font-weight: bold;
+}
+/*den vita lite genomskinliga rutan bakom h1 görs enklast med ett span*/
+
+/*vilken storlek de olika rubrikerna ska se ha, font och färg redan bestämt*/
+h1 { /*rubriken ska ligga "över" headerbilden så den får positioneras annorlunda än de andra*/
+        font-size: 40px;
+                position: absolute; /*för att få h1 att hamna överst*/
+        top: 10px;/*finjustrerar position med top och paddingen av h1 span*/
+}
+
+h1 span {
+        padding: 2px 10px 2px 240px; 
+        background-color: rgba(255, 255, 255, 0.5);/*kanske ändrar färg till grå beroende på resultat*/
+        font-size: 40px;
+}
+
+h2 {
+        font-size: 26px;
+}
+
+h3 {
+        font-size: 18px;
+}
+
+h4 { /*samma storlek på h4,h5,h6 som för vanlig text*/
+        font-size: 16px;
+}
+
+h5 {
+        font-size: 16px;
+}
+
+h6 {
+        font-size: 16px;
+}
+/*i princip all "vanlig" text på hemsidan, och bildernas egna kolumn. Flex för att sätta bilder i koumn
+till höger*/
+.content, .ImageColumn {
+        background-color: #FFFFFF;
+        border-top: 6px solid #FF9933; /*orange border*/
+        margin: 30px 30px 30px 30px;
+        padding: 20px;
+}
+
+/*använder denna klass för att (förhoppningsvis) göra kolumner enklast*/
+.ColumnStyling{
+        margin: 0 120px 20px 120px; /* margins to: top 0, right 100px, bottom 20px, left 100px */
+        display: flex;
+        flex-direction: row;  /*för att visa allt i en rad, vilket kommer få det att se ut som kolumner, confusing? yes. works? yes.*/
+        flex-wrap: nowrap;
+}
+
+/*för att få bilderna till vänster*/
+#EnglishImages {
+        display: block;
+        float: left;
+}
+/*fär att få bilderna i en kolumn*/
+.EnglishColumn {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+}
+
+#InfoImages {
+        text-align: center;
+}
+
+/*valde ett lättläst sans serif typsnitt från google*/
+p, li, th, td, figcaption, .content {
+        font: 16px 'Roboto', sans-serif;
+        color: #1F1F1F;
+}
+/*vissa sidor skulle vara centerade*/
+#contact_us, #ContentHistory, #MembersTable{
+        text-align: center;
+}
+/*headerbilden skalas med hemsidan så den är lagom stor för alla skärmar (förhoppningsvis)*/
+#TheHeader{
+        width: 100%;
+}
+
+/*för alla footers på alla sidor*/
+footer{
+        height: 100px; /*höjden av footern*/
+        text-align: center; /*så att texten hamnar i mitten av sidan*/
+        border-top: 5px solid #CACACA; /*grå border, färg tagen från kundens photoshopförslag*/
+        padding-top: 25px; /*så att det blir lite "luft" mellan texten och footern*/
+        background-color: #F5F5F5; /*så det blir vit bakgrund*/
+        margin: 30px 30px 30px 30px; /*samma avstånd till kanterna som innehållsdelen*/
+}
+/*navigeringsmenyn*/
+.nav {
+        list-style-type: none; /*ta bort punkerna på listan*/
+        background-color: #FFFFFF; /*färg tagen från färgschemat*/
+        text-align: center;
+        margin: -10px 0px 10px 0px; /*vet inte riktigt varför, men ha man inte -10px på top så hamnar navigeringen en bit från headerbilden
+        kanske går att lösa på ett bättre sätt*/
+}
+.nav li {
+        display: inline; /*sätter alla navigeringsknappar på samma rad helt enkelt*/
+}
+/*hur de olika knapparna beter sig när man inte interactar med dem på något sätt*/
+.nav li a{
+        color: #1F1F1F;
+        padding: 15px 20px;
+        text-decoration: none; /*ta bort länk-utseendet då det inte finns med i kundens förslag*/
+
+}
+.nav li a.hover{
+        border-bottom-color: #ff00ff /*ett streck under den man håller över,färg rosa tills jag sett med egna ögon att skiten funkar*/
+}
+
+dt {
+        font-style: italic;
+
+}
