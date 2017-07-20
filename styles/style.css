@@ -36,22 +36,27 @@ h1 span {
 
 h2 {
         font-size: 26px;
+        margin: 20px 0 4px 0px;
 }
 
 h3 {
         font-size: 18px;
+        margin: 20px 0 4px 0px;
 }
 
 h4 { /*samma storlek på h4,h5,h6 som för vanlig text*/
         font-size: 16px;
+        margin: 20px 0 4px 0px;
 }
 
 h5 {
         font-size: 16px;
+        margin: 20px 0 4px 0px;
 }
 
 h6 {
         font-size: 16px;
+        margin: 20px 0 4px 0px;
 }
 /*i princip all "vanlig" text på hemsidan, och bildernas egna kolumn. Flex för att sätta bilder i koumn
 till höger*/
@@ -91,6 +96,20 @@ p, li, th, td, figcaption, .content {
         font: 16px 'Roboto', sans-serif;
         color: #1F1F1F;
 }
+/*la till linjer för lite mer lättläslighet*/
+th, td {
+        width: 1%;
+        border-bottom: 1px solid #1F1F1F;
+}
+
+th {
+        font-weight: bold;
+}
+/*centrerar tabellen lite mer*/
+table {
+        padding: 20px 180px 20px 180px;
+}
+
 /*vissa sidor skulle vara centerade*/
 #contact_us, #ContentHistory, #MembersTable{
         text-align: center;
