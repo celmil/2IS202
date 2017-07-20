@@ -136,12 +136,13 @@ footer{
 }
 /*hur de olika knapparna beter sig när man inte interactar med dem på något sätt*/
 .nav li a {
+        border-bottom: 3px solid #FFFFFF;
         color: #1F1F1F;
-        padding: 15px 20px;
+        padding: 12px 20px;
         text-decoration: none; /*ta bort länk-utseendet då det inte finns med i kundens förslag*/
 
 }
-.nav li a.hover {
+.nav li a:hover {
         border-bottom-color: #ff00ff; /*ett streck under den man håller över,färg rosa tills jag sett med egna ögon att skiten funkar*/
 }
 
