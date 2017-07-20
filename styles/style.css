@@ -126,6 +126,7 @@ footer{
         border-top: 5px solid #CACACA; /*grå border, färg tagen från kundens photoshopförslag*/
         padding-top: 25px; /*så att det blir lite "luft" mellan texten och footern*/
         background-color: #F5F5F5; /*så det blir vit bakgrund*/
+        margin: 0;
 }
 /*navigeringsmenyn*/
 .nav {
