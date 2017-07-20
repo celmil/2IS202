@@ -7,6 +7,7 @@ vara utan padding, marginaler och kanter*/
         font-size: 16px;
 }
 
+
 /*bakgrundbild, grå*/
 body {
         background-image: url(../images/layout/body-pattern.jpeg);
@@ -24,12 +25,11 @@ h1, h2, h3, h4, h5, h6 {
 h1 { /*rubriken ska ligga "över" headerbilden så den får positioneras annorlunda än de andra*/
         font-size: 40px;
                 position: absolute; /*för att få h1 att hamna överst*/
-        top: 10px;/*finjustrerar position med top och paddingen av h1 span*/
+        top: 20px;/*finjustrerar position med top och paddingen av h1 span*/
 }
 
 h1 span {
         padding: 2px 10px 2px 240px; 
-        margin: 30px;
         background-color: rgba(255, 255, 255, 0.5);/*kanske ändrar färg till grå beroende på resultat*/
         font-size: 40px;
 }
@@ -116,19 +116,20 @@ footer{
         text-align: center;
         margin: -10px 0px 10px 0px; /*vet inte riktigt varför, men ha man inte -10px på top så hamnar navigeringen en bit från headerbilden
         kanske går att lösa på ett bättre sätt*/
+        padding: 12px 0px 6px 0px;
 }
 .nav li {
         display: inline; /*sätter alla navigeringsknappar på samma rad helt enkelt*/
 }
 /*hur de olika knapparna beter sig när man inte interactar med dem på något sätt*/
-.nav li a{
+.nav li a {
         color: #1F1F1F;
         padding: 15px 20px;
         text-decoration: none; /*ta bort länk-utseendet då det inte finns med i kundens förslag*/
 
 }
-.nav li a.hover{
-        border-bottom-color: #ff00ff /*ett streck under den man håller över,färg rosa tills jag sett med egna ögon att skiten funkar*/
+.nav li a.hover {
+        border-bottom-color: #ff00ff; /*ett streck under den man håller över,färg rosa tills jag sett med egna ögon att skiten funkar*/
 }
 
 dt {
