@@ -153,3 +153,7 @@ dt {
 #Weather{
         flex-basis: 50%;
 }
+/*för att man enklare ska kunna se rutan man skriver */
+#BeskrivArende, #ArendeSelect, #ArendeRubrik {
+        border: 1px solid #CACACA;
+}
