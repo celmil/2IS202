@@ -127,24 +127,31 @@ footer{
         list-style-type: none; /*ta bort punkerna på listan*/
         background-color: #FFFFFF; /*färg tagen från färgschemat*/
         text-align: center;
-        margin: -10px 0px 10px 0px; /*vet inte riktigt varför, men ha man inte -10px på top så hamnar navigeringen en bit från headerbilden
+        margin: -5px 0px 10px 0px; /*vet inte riktigt varför, men ha man inte -10px på top så hamnar navigeringen en bit från headerbilden
         kanske går att lösa på ett bättre sätt*/
-        padding: 12px 0px 6px 0px;
+        overflow: hidden;
+
 }
 .nav li {
         display: inline; /*sätter alla navigeringsknappar på samma rad helt enkelt*/
 }
 /*hur de olika knapparna beter sig när man inte interactar med dem på något sätt*/
 .nav li a {
+        display: inline-block;
         border-bottom: 3px solid #FFFFFF;
         color: #1F1F1F;
-        padding: 12px 20px;
+        padding: 8px;
         text-decoration: none; /*ta bort länk-utseendet då det inte finns med i kundens förslag*/
+        width: 100px;
 
 }
 .nav li a:hover {
-        border-bottom-color: #ff00ff; /*ett streck under den man håller över,färg rosa tills jag sett med egna ögon att skiten funkar*/
+        border-bottom-color: #1F1F1F; /*ett streck under den man håller över,färg mörkgrå*/
 }
+.nav li a.active {
+        border-bottom-color: #CACACA
+}
+
 
 dt {
         font-style: italic;
