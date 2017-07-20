@@ -151,3 +151,7 @@ dt {
         font-style: italic;
 
 }
+/*fixa så vädertabellen inte blir konstig storlek vilket verkar hända endast i chrome*/
+#Weather{
+        flex-basis: 50%;
+}
