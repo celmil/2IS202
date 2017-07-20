@@ -105,9 +105,8 @@ th, td {
 th {
         font-weight: bold;
 }
-
-/*vissa sidor skulle vara centerade*/
-#contact_us, #ContentHistory, #MembersTable{
+/*vissa sidor och element skulle vara centerade*/
+#contact_us, #ContentHistory, #MembersTable, #HeaderHistory, #FigureHistory{
         text-align: center;
 }
 /*headerbilden skalas med hemsidan så den är lagom stor för alla skärmar (förhoppningsvis)*/
@@ -122,7 +121,6 @@ footer{
         border-top: 5px solid #CACACA; /*grå border, färg tagen från kundens photoshopförslag*/
         padding-top: 25px; /*så att det blir lite "luft" mellan texten och footern*/
         background-color: #F5F5F5; /*så det blir vit bakgrund*/
-        margin: 0;
 }
 /*navigeringsmenyn*/
 .nav {
