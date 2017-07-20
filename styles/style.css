@@ -154,6 +154,6 @@ dt {
         flex-basis: 50%;
 }
 /*för att man enklare ska kunna se rutan man skriver */
-#BeskrivArende, #ArendeSelect, #ArendeRubrik {
+#BeskrivArende, #ArendeSelect, #ArendeRubrik, #EmailAddress {
         border: 1px solid #CACACA;
 }
