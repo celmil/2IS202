@@ -41,22 +41,22 @@ h2 {
 
 h3 {
         font-size: 18px;
-        margin: 20px 0 4px 0px;
+        margin: 10px 0 4px 0px;
 }
 
 h4 { /*samma storlek på h4,h5,h6 som för vanlig text*/
         font-size: 16px;
-        margin: 20px 0 4px 0px;
+        margin: 10px 0 4px 0px;
 }
 
 h5 {
         font-size: 16px;
-        margin: 20px 0 4px 0px;
+        margin: 10px 0 4px 0px;
 }
 
 h6 {
         font-size: 16px;
-        margin: 20px 0 4px 0px;
+        margin: 10px 0 4px 0px;
 }
 /*i princip all "vanlig" text på hemsidan, och bildernas egna kolumn. Flex för att sätta bilder i koumn
 till höger*/
