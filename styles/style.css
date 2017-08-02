@@ -83,7 +83,7 @@ till höger*/
 /*fär att få bilderna i en kolumn*/
 .EnglishColumn {
         display: block;
-        width: 80%;
+        width: 70%;
         margin: 10px auto;
 }
 
@@ -165,3 +165,25 @@ dt {
 #BeskrivArende, #ArendeSelect, #ArendeRubrik, #EmailAddress, #TeleNummer {
         border: 1px solid #CACACA;
 }
+/*anpassning till skärmstorlek, börjar med 480 som vi ser som minsta troliga skärm som kommer användas*/
+@media all and (max-width: 720px) {
+.ColumnStyling {
+        flex-direction: column;
+        margin: 0 0px 20px 0px;
+        min-width: 360px;
+        }
+.EnglishColumn {
+        min-width: 100%;
+        }
+.content {
+        margin: 5px;
+        }
+}
+
+@media all and (min-width: 721px) and (max-width: 1200px) {
+.ColumnStyling{
+        margin: 0 20px 10px 20px;
+        flex-direction: row;
+        }
+}
+
